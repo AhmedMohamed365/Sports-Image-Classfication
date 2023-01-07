@@ -1,0 +1,446 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:106%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'><span
+style='font-size:72.0pt'>Sports Image Classification</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Preprocessing:</span></h1>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>-Sharpening
+images randomly</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>-Equalizing
+histogram of images </span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>-Resizing
+Images to fit model</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>-
+Standardization of the data set using mean and variance</span></p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Augmentation: </span></h1>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>After many
+trials these augmentations achieved high accuracy on this data which helps in
+this small data to make model generalize better and be better in test.</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomRotation(90),</span></p>
+
+
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomHorizontalFlip(p=0.5),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomVerticalFlip(p=0.5),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomEqualize(0.5),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomAdjustSharpness(2.0),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomApply([transforms.GaussianBlur(3,(0.2,0.4))],p=0.7),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomAutocontrast(p=0.5),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.ToTensor(),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomErasing(p=0.5,
+scale=(0.02, 0.33), ratio=(3/5, 4/5), value=0, inplace=False),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomSolarize(0.2,
+p=0.5),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.ColorJitter(),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomInvert(p
+= 0.2),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomPerspective(distortion_scale=0.1),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%;color:#843C0C'>transforms.RandomAffine(degrees=0,translate
+= (0.1,0.2),scale = (0.5,0.75)),</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Examples of applying
+augmentations in train data : </span></h1>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img width=1842 height=692
+id="Picture 14" src="index_files/image001.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Data analysis:</span><span
+style='font-size:22.0pt;line-height:106%'> </span></h1>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>When using
+simple analysis like the class counts we can found that there is unbalancing in
+data </span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>Class counts
+for the data: </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img width=867 height=578
+id="Picture 4" src="index_files/image002.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>After
+scraping data using python scripts and adding data from another competition
+in Kaggle called <a
+href="https://www.kaggle.com/competitions/nn23-sports-image-classification">Sports
+Image Classification</a></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>The new
+distribution:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img border=0 width=1171 height=701
+id="Picture 11" src="index_files/image003.png"
+alt="Chart, bar chart&#10;&#10;Description automatically generated"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Balancing Data: </span></h1>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>Tried
+Choices:</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>- Over
+sampling by augmenting some cropped versions of images</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>-Random
+Sampler to give bigger weights for lower count classes</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>Founding
+that over sampling by increasing data and using random sampler helps to get
+better results.</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>We chose 98%
+for train data ,1% for validation and 1% for test</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img border=0 width=1522 height=450
+id="Picture 5" src="index_files/image004.png"
+alt="Graphical user interface, text, application&#10;&#10;Description automatically generated"></span></p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Stage 1: Without transfer
+learning</span></h1>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+22.0pt;line-height:106%;font-family:Symbol'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span dir=LTR></span><b><span style='font-size:22.0pt;line-height:
+106%'>Basic CNN Model</span></b><span style='font-size:22.0pt;line-height:106%'>:
+</span></p>
+
+<p class=MsoNormal style='text-indent:.25in'><span style='font-size:22.0pt;
+line-height:106%'>Achieved 83% in test</span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+22.0pt;line-height:106%;font-family:Symbol'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span dir=LTR></span><b><span style='font-size:22.0pt;line-height:
+106%'>VGG 19:</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'><img
+border=0 width=1057 height=519 id="Picture 8" src="index_files/image005.jpg"
+alt="No description available."></span></p>
+
+<p class=MsoNormal><b><span style='font-size:22.0pt;line-height:106%'>Achieved
+89 % in test on Kaggle </span></b></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'><img
+border=0 width=983 height=993 id="Picture 2" src="index_files/image006.png"
+alt="No description available."></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+22.0pt;line-height:106%;font-family:Symbol'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span dir=LTR></span><b><span style='font-size:22.0pt;line-height:
+106%'>Efficient -b0: </span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></b></p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Loss function:</span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img border=0 width=1263 height=179
+id="Picture 15" src="index_files/image007.jpg" alt="No description available."></span></p>
+
+<p class=MsoNormal><b><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img border=0 width=762 height=622
+id="Picture 16" src="index_files/image008.jpg" alt="No description available."></span></p>
+
+<p class=MsoNormal><b><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img border=0 width=907 height=446
+id="Picture 12" src="index_files/image009.png" alt="No description available."></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>training on
+data and testing on augmented portion of data </span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>achieved <b>75%</b>
+on test in Kaggle.</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'><img
+border=0 width=775 height=579 id="Picture 3" src="index_files/image010.png"
+alt="No description available."></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<h1><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></h1>
+
+<p class=MsoNormal><b><span style='font-size:22.0pt;line-height:106%'>Inception(GoogleNet):</span></b></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'><img
+border=0 width=932 height=834 id="Picture 19" src="index_files/image011.png"></span></p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Stage 2 : With transfer
+learning</span></h1>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>InceptionResNetV2:</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>Accuracy
+94% </span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'><img
+border=0 width=1631 height=241 id="Picture 1" src="index_files/image012.png"
+alt="Graphical user interface, text, application&#10;&#10;Description automatically generated"></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+22.0pt;line-height:106%;font-family:Symbol'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span dir=LTR></span><span style='font-size:22.0pt;line-height:
+106%'>Xception:</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'><img
+border=0 width=1570 height=614 id="Picture 7" src="index_files/image013.png"
+alt="No description available."></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>Achieved
+accuracy 94.5% on test in Kaggle</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>InceptionV1:
+</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img border=0 width=950 height=499
+id="Picture 10" src="index_files/image014.jpg" alt="No description available."></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:106%'><img border=0 width=1122 height=581
+id="Picture 9" src="index_files/image015.jpg" alt="No description available."></span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:22.0pt;line-height:106%'>Achieved
+accuracy <b>93%</b> on test in Kaggle.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:72.0pt;line-height:106%'>Best
+Model : </span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><span style='font-size:48.0pt;line-height:106%'>Efficient b4:</span></h1>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:22.0pt;
+line-height:106%'>Got accuracy <b>96.13%</b> on test data in kaggle</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+
+</body>
+
+</html>
